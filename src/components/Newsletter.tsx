@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import type { FormEvent } from 'react';
 
-export const Newsletter: React.FC = () => {
+export const Newsletter = () => {
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [errorMessage, setErrorMessage] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     if (!email) return;
 
@@ -29,10 +30,10 @@ export const Newsletter: React.FC = () => {
           // SUBSCRIPTION_PORTAL_v1.0
         </div>
         <h2 style={{ marginBottom: '12px', fontSize: '1.75rem', fontWeight: 600 }}>
-          Subscribe to the Datasheet
+          Subscribe to the Logbook
         </h2>
         <p style={{ color: 'var(--text-secondary)', marginBottom: '24px', fontSize: '0.95rem' }}>
-          Get VLSI design tutorials, project write-ups, hardware engineering career advice, and high-level semiconductor news directly in your inbox. No spam, just technical specs.
+          Get SystemVerilog tips, CPU pipeline designs, insights on AI in hardware engineering, and chip design news directly in your inbox. No spam, just technical logs.
         </p>
 
         {status === 'success' ? (

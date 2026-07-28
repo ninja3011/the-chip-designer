@@ -1,6 +1,4 @@
-import React from 'react';
-
-export const SchematicGraphic: React.FC = () => {
+export const SchematicGraphic = () => {
   return (
     <div className="blueprint-border" style={{ padding: '20px', backgroundColor: 'var(--bg-panel)', borderRadius: '4px', overflow: 'hidden' }}>
       <svg 

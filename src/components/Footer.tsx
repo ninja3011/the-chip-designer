@@ -1,16 +1,14 @@
-import React from 'react';
-
-export const Footer: React.FC = () => {
+export const Footer = () => {
   return (
     <footer style={{ borderTop: '1px solid var(--border)', backgroundColor: 'var(--bg-panel)' }}>
       {/* Upper footer grid */}
       <div className="grid-columns-3" style={{ padding: '40px', gap: '32px' }}>
         <div>
           <h4 className="mono-text" style={{ fontSize: '0.9rem', marginBottom: '16px', color: 'var(--accent)' }}>
-            // MISSION_STATEMENT
+            // LOGBOOK_MISSION
           </h4>
           <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
-            Demystifying silicon technology and hardware design. Bridging the gap between software development, circuit board layout, and VLSI physics.
+            Documenting experiments in RTL design, CPU hardware architecture, and the intersection of machine learning with silicon design.
           </p>
         </div>
         
@@ -39,15 +37,15 @@ export const Footer: React.FC = () => {
         
         <div>
           <h4 className="mono-text" style={{ fontSize: '0.9rem', marginBottom: '16px', color: 'var(--accent)' }}>
-            // CHIP_SPECIFICATIONS
+            // WORKSPACE_SPECIFICATIONS
           </h4>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px', fontSize: '0.75rem', fontFamily: 'var(--mono)', color: 'var(--text-muted)' }}>
-            <div>PROCESS_NODE: 3nm</div>
-            <div>VOLTAGE: 0.85V</div>
-            <div>CORE_CLK: 3.4GHz</div>
-            <div>TDP: 15W</div>
-            <div>ARCH: RISC-V</div>
-            <div>MEM: HBM3</div>
+            <div>KNOWLEDGE: EXPANDING</div>
+            <div>TINKER_MODE: ACTIVE</div>
+            <div>VLSI_EXP: 3_YEARS</div>
+            <div>DESK_TEMP: 23°C</div>
+            <div>HDL: SYSTEMVERILOG</div>
+            <div>FIRMWARE: OPEN_SOURCE</div>
           </div>
         </div>
       </div>

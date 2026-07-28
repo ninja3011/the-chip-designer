@@ -1,16 +1,14 @@
-import React from 'react';
-
-export const Header: React.FC = () => {
+export const Header = () => {
   const currentDate = new Date().toISOString().split('T')[0];
   
   return (
     <header className="blueprint-corners" style={{ borderBottom: '1px solid var(--border)' }}>
       {/* Top technical metadata line */}
       <div className="technical-header-meta">
-        <div>SYS_LOC: SILICON_VALLEY // COMPILER: VITE_RXT</div>
+        <div>SYS_LOC: HOME_LAB // LEARNING_CURVE: ACTIVE // COFFEE_STATE: BREWING</div>
         <div style={{ display: 'flex', gap: '16px' }}>
           <span>DATE: {currentDate}</span>
-          <span>STATUS: <span style={{ color: 'var(--accent)', fontWeight: 600 }}>ONLINE</span></span>
+          <span>STATUS: <span style={{ color: 'var(--accent)', fontWeight: 600 }}>TINKERING</span></span>
         </div>
       </div>
       

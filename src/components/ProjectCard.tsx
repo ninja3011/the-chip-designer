@@ -1,5 +1,3 @@
-import React from 'react';
-
 interface ProjectCardProps {
   id: string;
   category: string;
@@ -10,7 +8,7 @@ interface ProjectCardProps {
   docUrl?: string;
 }
 
-export const ProjectCard: React.FC<ProjectCardProps> = ({
+export const ProjectCard = ({
   id,
   category,
   title,
@@ -18,7 +16,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   tags,
   githubUrl,
   docUrl
-}) => {
+}: ProjectCardProps) => {
   return (
     <article className="card-technical">
       <div className="card-label">
